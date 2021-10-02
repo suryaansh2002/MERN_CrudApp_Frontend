@@ -1,3 +1,16 @@
+## A CRUD App made using MERN Stack
+
+### This is the frontend code for it
+
+### It is hosted at https://mern-crud-suryaansh.netlify.app/
+
+### You can checkout the backend at https://github.com/suryaansh2002/MERN_CrudApp_Backend
+
+### The backend is hosted at https://suryaansh-crud.herokuapp.com/
+
+## I have also added authentication to it using JWT.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
