@@ -1,0 +1,128 @@
+.main{
+background-color: #212429;
+min-height: calc(100vh - 125px);
+}
+
+
+.no{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin: 30px
+}
+.nav{
+  height: 60px;
+}
+.body{
+  min-height: 100vh;
+}
+
+.link{
+  text-decoration: none;
+  color:#ffffff;
+  font-size:22px;
+  margin:10px;
+}
+.link:hover{
+  background-color: #cfd3c7;
+  color: #28242c;
+  padding:5px;
+  border-radius: 5px;
+}
+
+.search{
+  text-align:center;
+  padding:40px auto;
+  padding-top:40px;
+}
+.search-bar{
+  width: 40%;
+  padding:5px;
+  border-radius: 20px;
+  padding-left: 15px;
+  outline: none;
+}
+.search-icon{
+  color: white;
+  font-size: 22px;
+  margin-right:5px
+}
+#post{
+  background-color: white;
+}
+
+.update{
+  color: white;
+  text-decoration: none;
+}
+.update:hover{
+  color: white;
+}
+.right{
+  text-align: right;
+}
+.center{
+  text-align: center;
+}
+.justify{
+  text-align: justify;
+}
+.mar{
+  margin:5px
+}
+.mar2{
+  margin-left: 5px;
+}
+.card{
+  width: 60rem;
+  margin:auto;
+  margin-top: 70px;
+}
+
+.footer{
+  text-align: center;
+  background-color: #212429;
+  color: white;
+  padding-top: 40px;
+
+}
+.copy{
+  background-color: #212429;
+
+}
+.row{
+  margin-bottom: 20px;
+}
+.row2{
+  margin-bottom: 40px;
+}
+.header{
+  color: white;
+  padding:30px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration:underline
+}
+
+.toast{
+  position: fixed;
+  top:10px;
+  right:10px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+.card{
+  width:70%;
+}
+}
+@media only screen and (max-width: 770px) {
+.header{
+font-size: 25px;
+}
+}
+@media only screen and (max-width: 480px) {
+.link{
+  font-size: 18px;
+}
+}
