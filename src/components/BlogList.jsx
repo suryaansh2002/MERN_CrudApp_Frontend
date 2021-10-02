@@ -10,7 +10,10 @@ import {
   faEdit,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card, Button, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import Container from 'react-bootstrap/container';
+
+
 
 export default class BlogList extends Component {
   constructor(props) {
@@ -126,21 +129,21 @@ export default class BlogList extends Component {
 
                    
                   {this.props.cookie.user.username===post.author?    <Container className="right">
-                      <Button
+                      <button
                         variant="danger"
-                        className="mar"
+                        className="mar delete"
                         onClick={this.handleDelete.bind(this, post._id)}
                       >
                         Delete{" "}
                         <FontAwesomeIcon className="mar2" icon={faTrashAlt} />
-                      </Button>
+                      </button>
 
-                      <Button variant="primary" className="mar">
+                      <button variant="primary" className="mar edi">
                         <Link to={"edit/" + post._id} className="update">
                           Update
                         </Link>
                         <FontAwesomeIcon className="mar2" icon={faEdit} />
-                      </Button>
+                      </button>
                     </Container>:null}
                   
                 </Card.Body>
@@ -168,22 +171,22 @@ export default class BlogList extends Component {
               {
                 
               this.props.cookie.user ? 
-                this.props.cookie.user.username===post.author?  <Container className="right">
-                  <Button
-                    variant="danger"
-                    className="mar"
+                this.props.cookie.user.username===post.author? 
+                 <Container className="right">
+                  <button
+                    className="mar delete_button"
                     onClick={this.handleDelete.bind(this, post._id)}
                   >
                     Delete{" "}
                     <FontAwesomeIcon className="mar2" icon={faTrashAlt} />
-                  </Button>
+                  </button>
 
-                  <Button variant="primary" className="mar">
+                  <button variant="primary" className="mar update_button">
                     <Link to={"edit/" + post._id} className="update">
                       Update
                     </Link>
                     <FontAwesomeIcon className="mar2" icon={faEdit} />
-                  </Button>
+                  </button>
                 </Container>:null:null}
               </Card.Body>
             </Card>
