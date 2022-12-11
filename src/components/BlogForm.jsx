@@ -32,7 +32,7 @@ class BlogForm extends Component {
     e.preventDefault();
     console.log(this.state);
     axios
-      .post("https://suryaansh-crud.herokuapp.com/posts", this.state)
+      .post("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/posts", this.state)
       .then((response) => {
         console.log(response);
         if(response.data !== null){

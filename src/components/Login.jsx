@@ -34,7 +34,7 @@ const Login = (props) => {
     };
 
     await axios
-      .post("https://suryaansh-crud.herokuapp.com/users/login", loginData, {
+      .post("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/users/login", loginData, {
         headers: headers,
       })
       .then((res) =>
@@ -61,7 +61,7 @@ const Login = (props) => {
     };
 
     axios
-      .post("https://suryaansh-crud.herokuapp.com/users/signup", signupData, {
+      .post("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/users/signup", signupData, {
         headers: headers,
       })
       .then((res) =>

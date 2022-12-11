@@ -29,7 +29,7 @@ export default class BlogList extends Component {
   }
   componentDidMount() {
     axios
-      .get("https://suryaansh-crud.herokuapp.com/posts")
+      .get("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/posts")
       .then((response) => {
         this.setState({ posts: response.data });
       })
@@ -39,7 +39,7 @@ export default class BlogList extends Component {
   }
   handleDelete = (postId) => {
     axios
-      .delete("https://suryaansh-crud.herokuapp.com/posts/" + postId)
+      .delete("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/posts/" + postId)
       .then((response) => {
         if (response.data != null) {
           this.setState({ show: true });
@@ -58,7 +58,7 @@ export default class BlogList extends Component {
   };
   handleUpdate = (postId) => {
     axios
-      .get("https://suryaansh-crud.herokuapp.com/posts/" + postId)
+      .get("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/posts/" + postId)
       .then((response) => {
         // alert(response.data.title);
       })

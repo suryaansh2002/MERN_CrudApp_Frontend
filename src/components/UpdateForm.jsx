@@ -34,7 +34,7 @@ class UpdateForm extends Component {
     console.log(postId)
     if(postId){
       axios
-      .get("https://suryaansh-crud.herokuapp.com/posts/"+postId)
+      .get("https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/posts/"+postId)
       .then((response) => {
         this.setState({ 
           _id: response.data._id,
@@ -76,7 +76,7 @@ handleSubmit = e =>{
 
   }
 //  console.log(this.state)
-  axios.patch('https://suryaansh-crud.herokuapp.com/posts/'+this.state._id , blog)
+  axios.patch('https://crud-server-jwpup3fpm-suryaansh2002.vercel.app/posts/'+this.state._id , blog)
   .then((response) => {
     console.log(response);
     if(response.data !== null){
